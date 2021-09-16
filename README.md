@@ -8,6 +8,7 @@
 ## My Extensions
 - Clipboard Indicator: Saves a clipboard history.
 - User Themes: To change user themes
+- Dash to Dock: To Customize Dock
 
 ## Notes on Using Ubuntu📓
 
