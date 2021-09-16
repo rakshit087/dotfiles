@@ -4,3 +4,7 @@
 - OS: Ubuntu 20.04.3 LTS
 - Shell: fish 
 - Icon Pack: Numix Circle
+
+## My Extensions
+- Clipboard Indicator: Saves a clipboard history.
+- User Themes: To change user themes
