@@ -2,6 +2,7 @@
 
 ## System Info
 - OS: Ubuntu 20.04.3 LTS
+- DE: Gnome 3
 - Shell: fish 
 - Icon Pack: Numix Circle
 
@@ -16,6 +17,15 @@
 I am using fish shell as my default shell. This can be done by the chsh command where chsh stands for change shell
 
 `chsh -s /usr/bin/fish`
+
+### 🔷 Removing Snaps
+It's just a personal preference, but I don't like snaps. To remove them from Ubuntu, I used
+
+`sudo apt remove snapd`  
+`sudo umount /dev/loop*`  
+`sudo rm -rf /snap`  
+`sudo rm -rf /var/lib/snapd`  
+`sudo rm -rf /etc/systemd/system/snap`
 
 ### 🔷 Loading dconf Configurations
 Gnome uses dconf for configurations. Dconf stores its data in a binary format rather than plain text files.
