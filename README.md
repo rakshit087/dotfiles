@@ -3,7 +3,7 @@
 ## System Info
 - OS: Ubuntu 20.04.3 LTS
 - DE: Gnome 3
-- Shell: fish 
+- Shell: zsh
 - Icon Pack: Numix Circle
 
 ## My Extensions
