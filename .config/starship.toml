@@ -57,7 +57,7 @@ show_always = true
 [memory_usage]
 symbol = " "
 format = "$symbol[${ram}( | ${swap})]($style) "
-threshold = 70
+threshold = 90
 style = "bold dimmed white"
 disabled = false
 
@@ -97,8 +97,8 @@ symbol = " "
 [nix_shell]
 symbol = " "
 
-[package]
-symbol = " "
+#[package]
+#symbol = " "
 
 [perl]
 symbol = " "
