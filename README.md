@@ -3,13 +3,14 @@
 ## System Info
 - OS: Ubuntu 20.04.3 LTS
 - DE: Gnome 3
-- Shell: zsh
+- Shell: fish
 - Icon Pack: Numix Circle
+- Theme: Nordic
 
 ## My Extensions
-- Clipboard Indicator: Saves a clipboard history.
-- User Themes: To change user themes
-- Dash to Dock: To Customize Dock
+- [Clipboard Indicator](https://extensions.gnome.org/extension/779/clipboard-indicator/): Saves a clipboard history.
+- [User Themes](https://extensions.gnome.org/extension/19/user-themes/): To change user themes
+- [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/): To customize the Dock
 
 ## Notes on Using Ubuntu📓
 
