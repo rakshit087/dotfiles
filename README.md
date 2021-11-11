@@ -1,4 +1,4 @@
-# My ![Manjaro](https://img.shields.io/badge/Manjaro-35BF5C?style=flat-square&logo=Manjaro&logoColor=white) dotfiles
+# My ![Manjaro](https://img.shields.io/badge/Manjaro-35BF5C?style=for-the-badge&logo=Manjaro&logoColor=white) dotfiles
 
 Okay I'll admit, this is by far the best Linux experience I've ever had. There are a lot of dot files and configuration in this one.
 
