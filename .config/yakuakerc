@@ -1,0 +1,12 @@
+[Appearance]
+Skin=one-dark
+SkinInstalledWithKns=true
+
+[Desktop Entry]
+DefaultProfile=Profile 1.profile
+
+[KFileDialog Settings]
+detailViewIconSize=16
+
+[Window]
+ShowTitleBar=false
