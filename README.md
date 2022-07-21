@@ -1,25 +1,34 @@
-# My ![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white) dotfiles
+# My ![Gnome](https://img.shields.io/badge/Gnome-E?style=for-the-badge&logo=gnome&logoColor=white) dotfiles
 
 ## System Info
-- OS: Ubuntu 20.04.3 LTS
-- DE: Gnome 3
-- Shell: fish
+
+- OS: EndeavourOS
+- DE: Gnome 42.3
+- Shell: zsh
 - Icon Pack: Numix Circle
-- Theme: Nordic
+- Theme: Adwaita
 
 ## My Extensions
+
 - [Clipboard Indicator](https://extensions.gnome.org/extension/779/clipboard-indicator/): Saves a clipboard history.
 - [User Themes](https://extensions.gnome.org/extension/19/user-themes/): To change user themes
-- [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/): To customize the Dock
 
-## Notes on Using Ubuntu📓
+## Achieving the same setup📓
 
 ### 🔷 Changing Default Shell
-I am using fish shell as my default shell. This can be done by the chsh command where chsh stands for change shell
 
-`chsh -s /usr/bin/fish`
+I am using zsh shell as my default shell. This can be done by the chsh command where chsh stands for change shell
 
-### 🔷 Removing Snaps
+`chsh -s /usr/bin/zsh`
+
+### 🔷 Setting App Switching to current tab only
+
+This can be done by
+
+`gsettings set org.gnome.shell.app-switcher current-workspace-only true`
+
+### 🔷 Removing Snaps (If you use Ubuntu)
+
 It's just a personal preference, but I don't like snaps. To remove them from Ubuntu, I used
 
 `sudo apt remove snapd`  
@@ -27,20 +36,3 @@ It's just a personal preference, but I don't like snaps. To remove them from Ubu
 `sudo rm -rf /snap`  
 `sudo rm -rf /var/lib/snapd`  
 `sudo rm -rf /etc/systemd/system/snap`
-
-### 🔷 Loading dconf Configurations
-Gnome uses dconf for configurations. Dconf stores its data in a binary format rather than plain text files.
-To dump dconf data I used:
-
-`dconf dump / > ~/.config/dconf/user.conf`
-
-This .config file can be loaded by
-
-`dconf load / < ~/.config/dconf/user.conf`
-
-### 🔷 Setting App Switching to current tab only
-This can be done by
-
-`gsettings set org.gnome.shell.app-switcher current-workspace-only true`
-
-I had dumped this to user.conf too.
