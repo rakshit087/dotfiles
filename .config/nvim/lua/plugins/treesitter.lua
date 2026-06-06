@@ -1,32 +1,24 @@
+if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+
+-- Customize Treesitter
+-- --------------------
+-- Treesitter customizations are handled with AstroCore
+-- as nvim-treesitter simply provides a download utility for parsers
+
+---@type LazySpec
 return {
-  "nvim-treesitter/nvim-treesitter",
-  dependencies = { "windwp/nvim-ts-autotag", "JoosepAlviste/nvim-ts-context-commentstring" },
-  event = "User AstroFile",
-  cmd = {
-    "TSBufDisable",
-    "TSBufEnable",
-    "TSBufToggle",
-    "TSDisable",
-    "TSEnable",
-    "TSToggle",
-    "TSInstall",
-    "TSInstallInfo",
-    "TSInstallSync",
-    "TSModuleInfo",
-    "TSUninstall",
-    "TSUpdate",
-    "TSUpdateSync",
-  },
-  build = ":TSUpdate",
+  "AstroNvim/astrocore",
+  ---@type AstroCoreOpts
   opts = {
-    highlight = {
-      enable = true,
-      disable = function(_, bufnr) return vim.api.nvim_buf_line_count(bufnr) > 10000 end,
+    treesitter = {
+      highlight = true, -- enable/disable treesitter based highlighting
+      indent = true, -- enable/disable treesitter based indentation
+      auto_install = true, -- enable/disable automatic installation of detected languages
+      ensure_installed = {
+        "lua",
+        "vim",
+        -- add more arguments for adding more treesitter parsers
+      },
     },
-    incremental_selection = { enable = true },
-    indent = { enable = true },
-    autotag = { enable = true },
-    context_commentstring = { enable = true, enable_autocmd = false },
   },
-  config = require "plugins.configs.nvim-treesitter",
 }
