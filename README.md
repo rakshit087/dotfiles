@@ -1,3 +1,3 @@
-# My UNIX dotfiles
-### This repo contains all my dotfiles. I have created seprate branches for Distro specific dotfiles.
-### Currently Using: Nobara OS
+# my dotfiles
+
+i absolutely love configuring my dotfiles and maintaining them. currently I use a Mac as my daily driver, and a linux (Arch btw) along with Niri + Noctalia shell as my secondary :)
